@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
+
+	<title>Интерактивная обезьянка</title>
+	<link rel="stylesheet" href="kutai2.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Gabriela" rel="stylesheet">
+	
+	
+	<link rel="shortcut icon" href="img/icon.png" type="image/png">
+
+	<!-- ПОДКЛЮЧЕННЯ СЛАЙДЕРА -->
+	<link rel="stylesheet" href="libs/animate/animate.css">
+	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="libs/owl-carousel/owl.theme.default.min.css">
+	<link rel="stylesheet" href="libs/font-awesome-4.6.3/css/font-awesome.min.css">
+	
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+	<!-- КНОПКА НА ВЕРХ -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+ 
+	<script type="text/javascript"> 
+	$(function() {
+	$(window).scroll(function() {
+	if($(this).scrollTop() != 0) {
+	$('#toTop').fadeIn();
+	} else {
+	$('#toTop').fadeOut();
+	}
+	});
+	$('#toTop').click(function() {
+	$('body,html').animate({scrollTop:0},400);
+	});
+	});
+	</script>
+</head>
+<body>
+	<!-- ЗАГОЛОВОК -->
+	<header>
+		<div class="container">
+			<div class="heading clearfix">
+				<img src="img/logo.png" alt="Golden" class="logo">
+
+				<div class="menu-icon">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg>
+				</div>
+				<!-- Меню сейчас принято округлять тегом nav -->
+				<nav>
+					<ul class="menu">
+						<li><a href="#section_about">Почему мы</a></li>
+						<li><a href="#section_goods">Наш товар</a></li>
+						<li><a href="#section_reviews">Отзывы</a></li>
+						<li><a href="#section_footer">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- НАЗВА -->
+	<section id="services">
+		<div class="title clearfix">
+			<div class="title_p">
+				<p>The Fingerlings Monkey</p>
+			</div>
+		</div>
+	</section>
+	<!-- ГОЛОВНА СЕКЦІЯ -->
+	<section id="section_main">
+		<div class="toy clearfix">
+			<div class="toy_inside">
+				<!-- Картинка -->
+				<div class="img_monkey" id="object_monkey">
+					<img src="img/monkey.png" alt="Monkey">
+				</div>
+				<!-- Сама форма подачи данных -->
+				<div class="form_holder">
+					<div class="form-title">
+						<p>Форма заявки</p>
+					</div>
+					<div class="form-subtitle">
+						<p>МЫ ОТПРАВЛЯЕМ ТОВАР БЕЗ ПРЕДОПЛАТЫ</p>
+					</div>
+					<form class="form_container" action="kutai3.php" method="post">
+						<div class="form-row">
+							<label for="form_name">Имя</label><br>
+							<input type="text" id="form_name" name="name">
+						</div>
+						<div class="form-row">
+							<label for="form_phone">Телефон</label><br>
+							<input type="text" id="form_phone" name="phone">
+						</div>
+						<div class="form-row">
+							<label for="form_email">E-mail</label><br>
+							<input type="email" id="form_email" name="email">
+						</div>
+						<div class="field_color" data-type="select">	
+							<label class="field_color_title">Выберите цвет</label>
+							<div class="field_color_choice"> 
+								<select> 
+									<option selected>Фиолетовый</option> 
+									<option>Белый</option> 
+									<option>Аква</option> 
+								</select> 
+							</div>
+						</div>
+						<div class="button">
+							<input type="submit" value="Оформить заказ">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ОСНОВНІ ХАРАКТЕРИСТИКИ -->
+	<section id="section_characteristic">
+		<div class="section_about_characteristic clearfix">
+			<div class="main_characteristic">
+				<div class="main_video">
+					<iframe src="https://www.youtube.com/embed/EWqvcQyD7uo" frameborder="0" gesture="media" allowfullscreen></iframe>
+				</div>
+				<div class="main_text">
+					<div class="first_main_title">
+						Итерактивная игрушка обезьянка
+					</div>
+					<div class="third_main_title">
+						Fingerlings Monkey очень забавная и всегда веселая. Эти детские обезьяны цепляются за ваши пальцы и всегда буду у вас под рукой. Они реагируют на звук, движение и прикосновение, забавляют маленькие шумы обезьян и двигаются так, что это заставит вас визжать от восторга. Fingerlings выполнены на базе последних разработок в мире игрушечной робототехники. Они живо реагируют на действия и слова человека, создавая полную иллюзию живого общения!  
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- СЕКЦІЯ ПРО ВИБІР ТОВАРУ -->
+	<section id="section_goods">
+		<div class="goods clearfix">
+			<div class="about_goods">
+				<div class="goods_1">
+					<div class="goods_img1">
+						<a href="#">
+							<img src="img/first_img_2.webp" alt="Second toy">
+						</a>
+					</div>
+					<div class="goods_name_1">
+						<a href="#section_main">Встречайте "Софи"</a>
+					</div>
+				</div>
+				<div class="goods_2">
+					<div class="goods_img2">
+						<a href="#">
+							<img src="img/first_img_1.webp" alt="First toy">
+						</a>
+					</div>
+					<div class="goods_name_2">
+						<a href="#section_main">Встречайте "Мия"</a>
+					</div>
+				</div>
+				<div class="goods_3">
+					<div class="goods_img3">
+						<a href="#">
+							<img src="img/first_img_3.webp" alt="Third toy">
+						</a>
+					</div>
+					<div class="goods_name_3">
+						<a href="#section_main">Встречайте "Зои"</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- СЕКЦІЯ ПРО КОМПАНІЮ -->
+	<section id="section_about">
+		<div class="about_container clearfix">
+			<div class="about clearfix">
+				<div class="about_title clearfix">
+					<h1>Наши преимущества</h1>
+				</div>
+				<div class="about_all clearfix">
+					<div class="first">
+						<div class="first_1">
+							<div class="img_1">
+								<img src="img/delivery.png" alt="delivery">
+							</div>
+							<div class="title_1">
+								<h4>Доставка без предоплаты</h4>
+								<p>Наша компания отправляет новой почтой в любую точку Украины</p>
+							</div>
+						</div>
+						<div class="first_2">
+							<div class="img_2">
+								<img src="img/coins.png" alt="coins">
+							</div>
+							<div class="title_2">
+								<h4>Самая низкие цены в Украине</h4>
+								<p>Мы предоставляем самые низкие цены, для того что бы вы были довольны сервисом нашей компании</p>
+							</div>
+						</div>
+					</div>
+					<div class="second">
+						<div class="second_3">
+							<div class="img_3">
+								<img src="img/guarantee.png" alt="guarantee">
+							</div>
+							<div class="title_3">
+								<h4>Гарантия</h4>
+								<p>Гарантия в 60 дней с момента покупки</p>
+							</div>
+						</div>
+						<div class="second_4">
+							<div class="img_4">
+								<img src="img/shopping.png" alt="shopping">
+							</div>
+							<div class="title_4">
+								<h4>Товар всегда в наличии</h4>
+								<p>Мы сотрудничаем на прямую с производителем и у нас всегда есть товар, который интересует вас</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- СЕКЦІЯ ВІДГУКІВ -->
+	<section id="section_reviews">
+		<div class="reviews clearfix">
+			<div class="reviews-title">
+				<p>Отзывы наших клиентов</p>
+			</div>
+			<div class="reviews-subtitle">
+				<p>Мы всегда заботимся о наших клиентах</p>
+			</div>
+			<div class="container_reviews">
+				<div class="block-one-example">
+					<div id="customNav" class="owl-my-nav"></div>
+					<div class="owl-carousel block-items">
+						<div class="item">
+					    	<div class="inner-testimonial">
+								<img src="img/reviews_2.png" class="full-opacity" alt="Клиент 2">
+					    		<h3 class="city-name">Светлана, Запорожье</h3>
+					    		<p class="text-testimonial">Очень милая детская игрушка, супер проста в использовании! Моя дочь полюбила её. Делает много различных движений и звуков. Всем советую, эта игрушка делает моего ребенка счастливым)</p>
+					    	</div>
+				    	</div>
+					    <div class="item">
+					    	<div class="inner-testimonial">
+					    		<img src="img/reviews_1.png" class="full-opacity" alt="Клиент 1">
+					    		<h3 class="city-name">Иван, Харьков</h3>
+					    		<p class="text-testimonial">Покупал дочке,очень обрадовалась)) Хорошая интерактивная игрушка и полезная для развития. Многофункциональная и качественная. Доставили быстро, рекомендую :)</p>
+					    	</div>
+				    	</div>
+					    <div class="item">
+					    	<div class="inner-testimonial">
+					    		<img src="img/reviews_3.png" class="full-opacity" alt="Клиент 3">
+					    		<h3 class="city-name">Александр, Киев</h3>
+					    		<p class="text-testimonial">Купил игрушку в качестве подарка для своей дочери на день рождение. Она её любит и она была хитом вечеринки, всем детям очень понравилась. Детки просили своих родитилей купить им такую игрушку. Большое приобретение для нас!</p>
+					    	</div>
+				    	</div>
+				    	<div class="item">
+					    	<div class="inner-testimonial">
+					    		<img src="img/reviews_4.png" class="full-opacity" alt="Клиент 1">
+					    		<h3 class="city-name">Людмила, Киев</h3>
+					    		<p class="text-testimonial">Моя дочка была одержима этой игрушкой в первый же день, и потом продолжала играть с ней регулярно. Мавпочка и мне понравилась, небольшая, интерактивная и очень интересная. Осталась довольна преобретением))</p>
+					    	</div>
+				    	</div>
+				    	<div class="item">
+					    	<div class="inner-testimonial">
+					    		<img src="img/reviews_5.png" class="full-opacity" alt="Клиент 1">
+					    		<h3 class="city-name">Владимир, Винница</h3>
+					    		<p class="text-testimonial">Покупал "baby monkey" для своей доченьки, она о ней очень мечтала! Ребёнок просто счастлив и эта обезьянка поднимает настроение всем в семье. Делает много крутых штук и прикольных звуков. Всем очень рекомендую!))</p>
+					    	</div>
+				    	</div>
+				    	<div class="item">
+					    	<div class="inner-testimonial">
+					    		<img src="img/reviews_6.png" class="full-opacity" alt="Клиент 1">
+					    		<h3 class="city-name">Екатерина, Николаев</h3>
+					    		<p class="text-testimonial">Очень красивая обезьянка! Дочь ее обожает) Играет с ней каждый день. Кроме интересных функций и интересных звуковых эффектов хотелось бы обратить внимание на превосходное качество и хорошую реализацию товара! Рекомендую, для детишек эта обезьянка то что надо))</p>
+					    	</div>
+				    	</div>
+				    	<div class="item">
+					    	<div class="inner-testimonial">
+					    		<img src="img/reviews_7.png" class="full-opacity" alt="Клиент 1">
+					    		<h3 class="city-name">Юрий, Житомир</h3>
+					    		<p class="text-testimonial">Обезьянка знает много команд, очень веселая и крутая. Звуки приятные и смешные. Дочь в восторге! Носит мартышку с собой каждый день. Рекомендую!</p>
+					    	</div>
+				    	</div>
+					</div>
+				</div>
+		    </div>
+		</div>
+	</section>
+	<!-- КІНЕЦЬ(ФУТЕР.) -->
+	<footer id="section_footer">
+		<div class="footer clearfix">
+			<div class="footer_title">
+				<p>Baby Monkey</p>
+			</div>
+			<div class="about_footer">
+				<ul>
+					<a href="#section_about"><li>Наша компания</li></a>
+					<a href="#section_characteristic"><li>Характеристика</li></a>
+					<a href="#section_main"><li>Цена на игрушку в Украине</li></a>
+					<a href="#section_reviews"><li>Клиенты</li></a>
+				</ul>
+			</div>
+			<div class="phone">
+				<p>+38-097-184-33-86</p>
+				<p>+38-067-474-22-96</p>
+			</div>
+			<div class="social">
+				<a href="#">
+					<img src="img/facebook.png" alt="Facebook">
+				</a>
+				<a href="#">
+					<img src="img/vk.png" alt="Vk">
+				</a>
+				<a href="https://www.instagram.com/fingerlings_wow_wee/" target="_blanc">
+					<img src="img/instagram.png" alt="Instagram">
+				</a>
+				<a href="#">
+					<img src="img/youtube.png" alt="YouTube">
+				</a>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- Скрипты -->
+	<script src="libs/jquery/jquery-2.1.3.min.js"></script>
+	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
+	<script src="js/custom.js"></script>
+
+	<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter22180637 = new Ya.Metrika({ id:22180637, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/22180637" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+	<div id="toTop">
+		<img src="img/scroll-up.png" alt="scroll-up">
+	</div>
+
+	<script type="text/javascript">
+		$('.menu-icon').click(function(){
+			$('.menu').toggle();
+		});
+	</script>
+</body>
+</html>
+
